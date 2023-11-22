@@ -65,3 +65,15 @@ textarea {
 img {
     max-width: 100%;
 }
+
+/* --------------------- RE-USABLE ------------------ */
+.section {
+    padding-block: 70px;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+    /* align-items: center;
+    justify-content: center; */
+}

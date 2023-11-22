@@ -1,0 +1,185 @@
+.home{
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+}   
+
+.home-img {
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 8px hsla(0, 0%, 0%, .9);
+    margin-left: 1rem;
+    height: 100%;
+}
+
+.home-content-container {
+    max-width: 40rem;
+    margin-inline: auto;
+    padding-top: 20px;
+    position: relative;
+    padding-inline: 20px;
+}
+
+.home-title h1 {
+    font-size: 40px;
+    padding-left: 50px;
+    line-height: 1.24;
+}
+
+.home-title h1:first-of-type {
+    color: var(--primary-color);
+}
+
+.home-content-container::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    background-color: var(--primary-color);
+    top: 13%;
+    margin-right: 10px;
+}
+
+.home-content {
+    margin-block: 16px 20px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+/* ------------------- HOME BUTTON ---------------- */
+.button {
+    display: inline-block;
+    padding: 10px 70px 10px 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 35px;
+    font-size: 20px;
+    font-family: var(--second-font);
+    position: relative;
+    z-index: 1;
+}
+
+.button span {
+    position: absolute;
+    right: -16px;
+    top: 0;
+    margin-right: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 55px;
+    width: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button:hover {
+    background-color: var(--primary-color);
+    transition: all .3s ease-in-out;
+    color: white;
+}
+
+
+/* ------------------- COLOR BLOCK ---------------- */
+.color-block {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 200%;
+    position: fixed;
+    top: -50%;
+    left: -80%;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+/* ------------------- MEDIA QUERY ---------------- */
+
+@media screen and (max-width: 1250px){
+    /* .home-title h1:first-of-type {
+        font-size: 36px;
+    }
+
+    .home-title h1:last-of-type{
+        font-size: 30px;
+    } */
+
+    .home-content {
+        margin-right: 20px;
+        line-height: 1.5;
+    }
+
+    .button {
+        font-size: 17px;
+        padding: 10px 60px 10px 30px;
+    }
+
+    .button span {
+        top: -1px;
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home  {
+        grid-template-columns: 1fr; 
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-img {
+        width: 250px;
+        height: 250px;
+        justify-self: center;
+        border-radius: 50%;
+    }
+
+    .home-title h1 {
+        padding-left: 0;
+        font-size: 28px;
+    }
+
+    .home-content {
+        padding-right: 0;
+        font-size: 18px;
+    }
+
+    .home-content-container::before {
+        display: none;
+    }
+
+    .color-block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .home {
+        gap: 10px;
+    }
+    
+    .home-title h1 {
+        font-size: 25px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+    }
+
+    .home-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .button {
+        padding: 10px 70px 10px 20px;
+        font-size: 12px;
+    }
+
+    .button span {
+        padding: 14px;
+    }
+
+}
