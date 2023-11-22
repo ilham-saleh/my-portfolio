@@ -1,0 +1,67 @@
+/* --------------- GOOGLE FONTS --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&family=Roboto&display=swap');
+
+/* --------------- CSS VARIABLES --------------- */
+:root {
+    /* COLORS */
+    --primary-color: hsl(271, 76%, 53%);
+    --title-color: hsl(0, 0%, 40%);
+    --text-color: hsl(0, 0%, 50%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(0, 0%, 93%);
+    --border-color: hsl(0, 0%, 87%);
+    --white-text: #fff;
+
+    /* --------------- TYPOGRAPHY --------------- */
+    --body-font:  'Open Sans', sans-serif;
+    --second-font: 'Poppins', sans-serif;
+}
+
+/* --------------- BASE---------------  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input, 
+textarea {
+    font-family: var(--body-font);
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+
+}
+
+h1, 
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, Link {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
