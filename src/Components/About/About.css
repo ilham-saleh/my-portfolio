@@ -1,0 +1,236 @@
+.about {
+    grid-template-columns: 1.3fr 1fr;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 70px;
+}
+
+.about-img{
+    width: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 8px hsla(0, 0%, 0%, .9);
+    /* margin-top: 4rem; */
+    /* margin-right: 45rem; */
+}
+
+.about-title {
+    margin-bottom: 2rem;
+    font-size: 50px;
+}
+
+.about-title span {
+    color: var(--primary-color);
+}
+
+.personal-info-container {
+    margin-top: 60px;
+}
+
+.personal-info-container ul li {
+    display: flex;
+    gap: 10px;
+}
+
+.personal-info-title {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.personal-info-container  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+.about .button {
+    margin-top: 30px;
+}
+
+.seperator {
+    height: 1px;
+    max-width: 40%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin: 70px auto 56px;
+}
+
+/* ---------------------- SKILLS -------------- */
+.skills-container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.technical-skills li {
+   margin-bottom: 20px; 
+}
+
+.skills-title {
+    font-size: 40px;
+}
+
+.both-skills-title h4 {
+    text-align: center;
+}
+
+.skills-title span {
+    color: var(--primary-color);
+}
+
+.technical-skills-container {
+    max-width: 500px;
+}
+
+.technical-skills-title,
+.other-skills-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.icon-and-name {
+    display: grid;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-weight: 700;
+} 
+
+.logo {
+    /* color: var(--primary-color); */
+    font-size: 25px;
+}
+
+.html-logo {
+    color: brown;
+}
+
+.css-logo {
+    color: darkblue;
+}
+
+.js-logo {
+    color: yellow;
+    background-color: var(--primary-color);
+    outline: none;
+}
+
+.react-logo {
+    color: blue;
+}
+
+.git-logo {
+    color: orange;
+}
+
+.barCompleted {
+    background-color: red;
+}
+
+.CircularProgressbar-path {
+    stroke: var(--primary-color);
+}
+
+.other-skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 450px;
+}
+
+.other-skills-container li {
+    width: 120px;
+    text-align: center;
+    
+}
+
+.other-skills-container li h4 {
+    margin-top: 10px;
+}
+
+
+.CircularProgressbar-path {
+    stroke: var(--primary-color) !important;
+    stroke-linecap: butt !important;
+}
+
+.CircularProgressbar-trail {
+    /* stroke: var(--container-color) !important; */
+    stroke: hsl(0, 0%, 93%) !important;
+}
+
+.CircularProgressbar-text {
+    fill: var(--title-color) !important;
+    font-family: var(--second-font);
+}
+
+/* ----------------- MEDIA QUERY ---------------- */
+@media screen and (max-width: 1333px) {
+    .about {
+        grid-template-columns: 500px 1fr;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .about-img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .about-img {
+        display: none;
+    }
+
+    .about {
+        grid-template-columns: 100%;
+        /* padding-left: 200px; */
+        justify-items: center;
+    }
+    
+    /* .personal-info-container  {
+        justify-content: center;
+        width: 100%;
+        padding-left: 200px;
+        
+     }  */
+
+    .personal-info-container ul {
+        column-gap: 200px;
+    } 
+   
+}
+
+@media screen and (max-width: 700px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .personal-info-container  ul {
+        grid-template-columns: 1fr;
+    }
+
+    .other-skills-container {
+        column-gap: 20px;
+    }
+
+    .about-title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+
+}
