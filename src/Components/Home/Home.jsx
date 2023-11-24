@@ -1,8 +1,8 @@
 import React from "react";
-import CV from '../../assets/Ilham_Saleh_CV.pdf'
+import CV from '../../assets/Ilham/Ilham_Saleh_CV.pdf'
 
 import { FaArrowDown } from "react-icons/fa6"
-import Ilham from '../../assets/IlhamNew.png'
+import Ilham from '../../assets/Ilham/IlhamNew.png'
 import './Home.css'
 
 import AOS from 'aos';

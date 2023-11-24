@@ -5,12 +5,21 @@ import { FaUser } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
 
-import { MdOutlineHtml } from "react-icons/md";
 import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
+
+import { FaCode } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
+// import { IoSchoolOutline } from "react-icons/io5";
+// import { FaRegFileAlt } from "react-icons/fa";
+
+import Brewery from './assets/Projects/brewery.jpg'
+import Greengrocery from './assets/Projects/green-store.jpg'
+import Dashboard from './assets/Projects/social-media.jpg'
+import Spotify from './assets/Projects/spotify-lg.png'
 
  export const links = [
     {
@@ -151,5 +160,91 @@ export const otherSkills = [
         percentage: 80
     },
 
+]
+
+export const projects = [
+    {
+        id: 1,
+        img: Brewery,
+        title: 'Brewery App',
+        link: 'https://github.com/ilham-saleh/js-dom-brewery-tours-challenge',
+        details: [ 
+
+            {
+                icon: <FaCode />,
+                title: 'Language:',
+                desc: 'JavaScript'
+            },
+
+            {
+                icon: <FaLink/>,
+                title: 'View Repo:',
+                desc: 'Click to see GitHub repo'
+            }
+        ]
+    },
+
+    {
+        id: 2,
+        img: Greengrocery,
+        title: 'Green Grocery Store',
+        link: 'https://github.com/ilham-saleh/react-greengrocers',
+        details: [ 
+
+            {
+                icon: <FaCode />,
+                title: 'Language:',
+                desc: 'React.Js'
+            },
+
+            {
+                icon: <FaLink/>,
+                title: 'View Repo:',
+                desc: 'Click to see GitHub repo'
+            }
+        ]
+    },
+
+    {
+        id: 3,
+        img: Dashboard,
+        title: 'Social App',
+        link: 'https://github.com/ilham-saleh/react-cohort-dashboard-challenge',
+        details: [ 
+
+            {
+                icon: <FaCode />,
+                title: 'Language:',
+                desc: 'React.Js/API'
+            },
+
+            {
+                icon: <FaLink/>,
+                title: 'View Repo:',
+                desc: 'Click to see GitHub repo'
+            }
+        ]
+    },
+
+    {
+        id: 4,
+        img: Spotify,
+        title: 'Spotify Clone',
+        link: 'https://github.com/ilham-saleh/html-spotify-challenge',
+        details: [ 
+
+            {
+                icon: <FaCode />,
+                title: 'Language:',
+                desc: 'HTML/CSS'
+            },
+
+            {
+                icon: <FaLink/>,
+                title: 'View Repo:',
+                desc: 'Click to see GitHub repo'
+            }
+        ]
+    },
 ]
 // export default links
