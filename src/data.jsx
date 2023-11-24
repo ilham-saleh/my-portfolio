@@ -107,35 +107,35 @@ export const technicalSkills = [
         id: 1,
         icon: <FaHtml5 className="logo html-logo"/>,
         name: 'HTML',
-        percentage: '45' 
+        percentage: 45 
     },
 
     {
         id: 2,
         icon: <FaCss3Alt className="logo css-logo"/>,
         name: 'CSS',
-        percentage: '85' 
+        percentage: 70 
     },
 
     {
         id: 3,
         icon: <IoLogoJavascript className="logo js-logo"/>,
         name: 'JavaScript',
-        percentage: '70' 
+        percentage:75
     },
 
     {
         id: 4,
         icon: <FaReact className="logo react-logo"/>,
         name: 'React',
-        percentage: '82' 
+        percentage: 80
     },
 
     {
         id: 5,
         icon: <FaGitAlt className="logo git-logo"/>,
         name: 'Git/GitHub',
-        percentage: '60' 
+        percentage: 60
     },
     
     

@@ -16,7 +16,12 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
+import {Progress} from 'rsuite'
+// import 'rsuite/dist/rsuite.min.css'
+import 'rsuite/dist/rsuite-no-reset.min.css';
+
 function About() {
+
     return (
         <section className="section">
             <h1 className="about-title section-title">
@@ -46,9 +51,13 @@ function About() {
                                         {icon}
                                         <h4>{name}</h4>
                                     </div>
+                                    <div>
+                                        <h4 className="percentage">{`${percentage}%`}</h4>
+                                    </div>
                                 </div>
 
-                                <ProgressBar completed={percentage} />
+                                <Progress.Line percent={percentage}/>
+                                {/* <ProgressBar completed={percentage}/> */}
                             </li>
                         ))}
                     </ul>

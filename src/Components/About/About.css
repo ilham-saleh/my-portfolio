@@ -101,6 +101,16 @@
     font-weight: 700;
 } 
 
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.percentage {
+    font-size: 15px;
+}
+
 .icon-and-name h4 {
     font-size: 12px;
 }
@@ -174,6 +184,18 @@
     font-family: var(--second-font);
 }
 
+.rs-progress-line-bg {
+    background-color: var(--primary-color) !important;
+}
+
+.rs-progress-line {
+    padding: 0 !important;
+    align-items: flex-start;
+}
+
+.rs-progress-info {
+    display: none !important;
+}
 
 /* ----------------- MEDIA QUERY ---------------- */
 @media screen and (max-width: 1333px) {

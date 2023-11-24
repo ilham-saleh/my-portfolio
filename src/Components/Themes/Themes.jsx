@@ -46,7 +46,8 @@ export default function Themes() {
         }else {
             setTheme('light-theme')
         }
-
+ 
+        console.log(theme)
     }
 
     useEffect(() => {

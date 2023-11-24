@@ -57,7 +57,7 @@ function Contact() {
                     <div className="contact-means">
                         <FaEnvelopeOpen className="contact-icon" />
                         <div>
-                            <p>Email me</p>
+                            <h4>Email me</h4>
                             <p>ilham2saleh@gmail.com</p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ function Contact() {
                     <div className="contact-means">
                         <FaPhoneSquareAlt className="contact-icon" />
                         <div>
-                            <p>Call me</p>
+                            <h4>Call me</h4>
                             <p>+447745756106</p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ function Contact() {
                             <FaSquareGithub className="contact-icon" />
                         </a>
                         <div>
-                            <p>Visit my GitHub account</p>
+                            <h4>Visit my GitHub account</h4>
                         </div>
                     </div>
                 </div>
