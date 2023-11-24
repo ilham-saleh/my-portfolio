@@ -21,7 +21,7 @@ function Home() {
                     <h1>Front-End Developer</h1>
                 </div>
                 <div className="home-content">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, beatae sapiente perspiciatis commodi molestiae odio nemo ea excepturi doloremque vel!</p>
+                    <p>Based in London, currently a student at <a href="https://boolean.co.uk" target="_blank">Boolean UK,</a> studying Full-Stack course. I have already covered Front-End part of my course and this is my first portfolio ever!</p>
                 </div>
 
                 <a href={CV} download>

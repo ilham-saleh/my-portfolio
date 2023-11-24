@@ -1,6 +1,6 @@
 import smile from '../../assets/smile.jpg'
 import desk1 from '../../assets/desk-1.jpg'
-import Me2 from '../../assets/ilham-portfolio-2.png'
+import Me from '../../assets/Ilham/ilhamNew2.png'
 import MyCuriosity from '../../assets/my-curiosity.jpg'
 import { FaArrowDown } from "react-icons/fa";
 
@@ -22,7 +22,9 @@ export default function AboutContent({personalInfos}) {
             <a href="#skills"><button className="button">Scroll Down <span><FaArrowDown/></span></button></a>
         </div>
 
-        <img src={Me2} alt="Desktop" className="about-img" data-aos="fade-left"/>
+        <img src={Me} alt="Desktop" className="about-img" data-aos="fade-left"/>
+
+        <div className="about-color-block"></div>
     </div>
     )
 }

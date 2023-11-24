@@ -101,12 +101,16 @@
     font-weight: 700;
 } 
 
+.icon-and-name h4 {
+    font-size: 12px;
+}
+
 .logo {
-    /* color: var(--primary-color); */
+    color: var(--primary-color);
     font-size: 25px;
 }
 
-.html-logo {
+/* .html-logo {
     color: brown;
 }
 
@@ -126,7 +130,7 @@
 
 .git-logo {
     color: orange;
-}
+} */
 
 .barCompleted {
     background-color: red;
@@ -169,6 +173,7 @@
     fill: var(--title-color) !important;
     font-family: var(--second-font);
 }
+
 
 /* ----------------- MEDIA QUERY ---------------- */
 @media screen and (max-width: 1333px) {

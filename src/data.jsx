@@ -21,6 +21,13 @@ import Greengrocery from './assets/Projects/green-store.jpg'
 import Dashboard from './assets/Projects/social-media.jpg'
 import Spotify from './assets/Projects/spotify-lg.png'
 
+import Blue from './assets/Colors/blue.png'
+import BlueViolet from './assets/Colors/blueviolet-drop.png'
+import Green from './assets/Colors/green.png'
+import magenta from './assets/Colors/magenta.png'
+import Orange from './assets/Colors/orange.png'
+import Red from './assets/Colors/red.png'
+
  export const links = [
     {
         id: 1,
@@ -245,6 +252,44 @@ export const projects = [
                 desc: 'Click to see GitHub repo'
             }
         ]
+    },
+]
+
+export const themes = [
+    {
+        id: 1,
+        img: BlueViolet,
+        color: 'hsl(271, 76%, 53%)'
+    },
+
+    {
+        id: 2,
+        img: Blue,
+        color: 'blue'
+    },
+
+    {
+        id: 2,
+        img: Orange,
+        color: 'orange'
+    },
+
+    {
+        id: 3,
+        img: Green,
+        color: 'green'
+    },
+
+    {
+        id: 4,
+        img: magenta,
+        color: 'magenta'
+    },
+
+    {
+        id: 1,
+        img: Red,
+        color: 'red'
     },
 ]
 // export default links

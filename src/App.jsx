@@ -7,13 +7,14 @@ import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
+import Themes from './Components/Themes/Themes';
 
 function App() {
 
   return (
     <>
-       <Navbar />
-
+      <Navbar />
+      <Themes />
       <Routes>
         <Route index element={<Home />} />
         <Route path='/about' element={<About />}/>
