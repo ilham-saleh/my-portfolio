@@ -16,17 +16,17 @@ import { FaLink } from "react-icons/fa";
 // import { IoSchoolOutline } from "react-icons/io5";
 // import { FaRegFileAlt } from "react-icons/fa";
 
-import Brewery from './assets/Projects/brewery.jpg'
-import Greengrocery from './assets/Projects/green-store.jpg'
-import Dashboard from './assets/Projects/social-media.jpg'
-import Spotify from './assets/Projects/spotify-lg.png'
+import Brewery from '././assets/Projects/brewery.jpg'
+import Greengrocery from '././assets/Projects/green-store.jpg'
+import Dashboard from '././assets/Projects/social-media.jpg'
+import Spotify from '././assets/Projects/spotify-lg.png'
 
-import Blue from './assets/Colors/blue.png'
-import BlueViolet from './assets/Colors/blueviolet-drop.png'
-import Green from './assets/Colors/green.png'
-import magenta from './assets/Colors/magenta.png'
-import Orange from './assets/Colors/orange.png'
-import Red from './assets/Colors/red.png'
+import Blue from '././assets/Colors/blue.png'
+import BlueViolet from '././assets/Colors/blueviolet-drop.png'
+import Green from '././assets/Colors/green.png'
+import magenta from '././assets/Colors/magenta.png'
+import Orange from '././assets/Colors/orange.png'
+import Red from '././assets/Colors/red.png'
 
  export const links = [
     {
