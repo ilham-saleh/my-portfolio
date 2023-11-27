@@ -1,7 +1,4 @@
-import smile from '../../assets/smile.jpg'
-import desk1 from '../../assets/desk-1.jpg'
 import Me from '../../assets/Ilham/ilhamNew2.png'
-import MyCuriosity from '../../assets/my-curiosity.jpg'
 import { FaArrowDown } from "react-icons/fa";
 
 import AOS from 'aos';

@@ -3,16 +3,15 @@ import { personalInfos } from "../../data";
 import { technicalSkills } from "../../data";
 import { otherSkills } from "../../data";
 import AboutContent from "./AboutContent";
-import Skills from "./Skills";
 import './about.css'
 
-import { MdOutlineHtml } from "react-icons/md";
-import { FaReact } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaGitAlt } from "react-icons/fa";
+// import { MdOutlineHtml } from "react-icons/md";
+// import { FaReact } from "react-icons/fa";
+// import { FaCss3Alt } from "react-icons/fa";
+// import { IoLogoJavascript } from "react-icons/io5";
+// import { FaGitAlt } from "react-icons/fa";
 
-import ProgressBar from "@ramonak/react-progress-bar";
+// import ProgressBar from "@ramonak/react-progress-bar";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
