@@ -3,7 +3,7 @@ import { personalInfos } from "../../data";
 import { technicalSkills } from "../../data";
 import { otherSkills } from "../../data";
 import AboutContent from "./AboutContent";
-import './about.css'
+import './About.css'
 
 // import { MdOutlineHtml } from "react-icons/md";
 // import { FaReact } from "react-icons/fa";
