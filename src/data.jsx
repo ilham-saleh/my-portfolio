@@ -22,7 +22,7 @@ import Dashboard from '././assets/Projects/social-media.jpg'
 import Spotify from '././assets/Projects/spotify-lg.png'
 
 import Blue from '././assets/Colors/blue.png'
-import BlueViolet from '././assets/Colors/blueviolet-drop.png'
+import BlueViolet from '././assets/Colors/blueViolet-drop.png'
 import Green from '././assets/Colors/green.png'
 import magenta from '././assets/Colors/magenta.png'
 import Orange from '././assets/Colors/orange.png'
