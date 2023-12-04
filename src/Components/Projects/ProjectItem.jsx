@@ -11,7 +11,7 @@ export default function ProjectItem({img, title, details, link}) {
 
     return (
         <div className="project-item" data-aos="fade-up">
-                <img src={img} alt="Project-Image" className="project-img"/>
+            <img src={img} alt="Project-Image" className="project-img"/>
 
             <div className="project-hover" onClick={toggleshowProject}>
                 <h3 className="project-title">{title}</h3>
