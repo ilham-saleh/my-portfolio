@@ -1,25 +1,22 @@
 import React from "react";
 
+// Navbar Icons
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
 
-import { FaHtml5 } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaGitAlt } from "react-icons/fa";
+// Skills Icons
 import { GoBrowser } from "react-icons/go";
 import { TbSettingsCode } from "react-icons/tb";
 import { MdOutlineStyle } from "react-icons/md";
 import { SiJest } from "react-icons/si";
 
+// Project Icons
 import { FaCode } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
-// import { IoSchoolOutline } from "react-icons/io5";
-// import { FaRegFileAlt } from "react-icons/fa";
 
+// Project Images
 import Brewery from "././assets/Projects/brewery.webp";
 import Greengrocery from "././assets/Projects/online-store.jpg";
 import CohortManager from "././assets/Projects/cohortManager2.png";
@@ -27,6 +24,7 @@ import Pixabay from "././assets/Projects/pixabay.png";
 import ChattApp from "././assets/Projects/chatting-app.png";
 import TicTacToe from "././assets/Projects/tic-tac-toe.png";
 
+// Theme related images
 import Blue from "././assets/Colors/blue.png";
 import BlueViolet from "././assets/Colors/blueViolet-drop.png";
 import Green from "././assets/Colors/green.png";

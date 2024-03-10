@@ -30,12 +30,7 @@ function About() {
       <h1 className="skills-title section-title">
         My <span>Skills</span>
       </h1>
-      {/* 
-                <div className="both-skills-title">
-                    <h4 className="section-title -skills-title">Technical Skills</h4>
-                    <h4 className="section-title">Other Skills</h4>
 
-                </div> */}
       <div id="skills" className="skills-container grid">
         <div className="technical-skills-container" data-aos="fade-down-right">
           <h4 className="section-title technical-skills-title">
@@ -47,7 +42,8 @@ function About() {
                 <div className="progress-title">
                   <div className="icon-and-name">
                     {icon}
-                    <h4 style={{fontSize: 16}}>{name}</h4> <span style={{fontSize: 14}}>{desc}</span>
+                    <h4 style={{ fontSize: 16 }}>{name}</h4>{" "}
+                    <span style={{ fontSize: 14 }}>{desc}</span>
                   </div>
                   <div>
                     <h4 className="percentage">{`${percentage}%`}</h4>
@@ -55,7 +51,6 @@ function About() {
                 </div>
 
                 <Progress.Line percent={percentage} />
-                {/* <ProgressBar completed={percentage}/> */}
               </li>
             ))}
           </ul>

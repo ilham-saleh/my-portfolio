@@ -33,10 +33,6 @@
   vertical-align: middle;
 }
 
-/* .project-title {
-    margin: 5px 0 15px 0;
-} */
-
 .project-hover {
   background-color: var(--primary-color);
   inset: 0;
