@@ -18,6 +18,39 @@ app.use(cors());
 //Tell express to parse JSON in the request body
 app.use(express.json());
 
+// app.post("/send-email", async (req, res) => {
+//   const { name, email, subject, message } = req.body;
+//   try {
+//     const { name, email, message } = req.body;
+
+//     // Create a Nodemailer transporter
+//     const transporter = nodemailer.createTransport({
+//       service: "gmail",
+//       auth: {
+//         user: "ilham2saleh@gmail.com", // replace with your email
+//         pass: "Family769896", // replace with your email password or app password
+//       },
+//     });
+
+//     // Email options
+//     const mailOptions = {
+//       from: "your-email@gmail.com", // replace with your email
+//       to: "recipient-email@example.com", // replace with the recipient's email
+//       subject: "New Form Submission",
+//       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+//     };
+
+//     // Send the email
+//     const info = await transporter.sendMail(mailOptions);
+
+//     console.log("Email sent:", info.response);
+//     res.status(200).send("Email sent successfully");
+//   } catch (error) {
+//     console.error("Error sending email:", error);
+//     res.status(500).send("Internal Server Error");
+//   }
+// });
+
 app.post("/send-email", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
@@ -44,4 +77,13 @@ app.post("/send-email", async (req, res) => {
 
   res.json({ message: messageDB });
 });
+
+// Serve static files from the build directory
+app.use(express.static(path.join(__dirname, "frontend/build")));
+
+// Serve the frontend for any other routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
+});
+
 module.exports = app;
