@@ -7,6 +7,7 @@ const cors = require("cors");
 
 //Create a new express application
 const app = express();
+const path = require('path');
 
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
