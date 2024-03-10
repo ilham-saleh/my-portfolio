@@ -51,7 +51,7 @@ function Contact() {
     };
 
     try {
-      const response = await fetch("http://localhost:3030/send-email", options);
+      const response = await fetch("/.netlify/functions/sendEmail", options);
       const result = await response.json();
       console.log(result);
 

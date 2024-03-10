@@ -7,7 +7,7 @@ const cors = require("cors");
 
 //Create a new express application
 const app = express();
-const path = require('path');
+const path = require("path");
 
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
@@ -52,33 +52,19 @@ app.use(express.json());
 //   }
 // });
 
+const sendEmail = require("../functions/sendEmail.js");
 app.post("/send-email", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
-  const messageDB = await prisma.message.create({
-    data: {
-      name,
-      email,
-      subject,
-      message,
-    },
-  });
+  // If you're running the entire backend locally, call the sendEmail function directly
+  const messageDB = await sendEmail({ name, email, subject, message });
 
-  if (!name || !email || !message) {
-    res
-      .status(406)
-      .json({ error: "Necessary fields are required to fill in!" });
+  if (!messageDB.error) {
+    res.status(200).json(messageDB);
+  } else {
+    res.status(500).json({ error: "Internal Server Error" });
   }
-
-  if (message.length < 10) {
-    res
-      .status(406)
-      .json({ error: "Message must be above 10 charachters or more!" });
-  }
-
-  res.json({ message: messageDB });
 });
-
 // Serve static files from the build directory
 app.use(express.static(path.join(__dirname, "frontend/build")));
 
