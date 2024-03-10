@@ -77,6 +77,7 @@ function Contact() {
           pauseOnHover: true,
           draggable: true,
         });
+        localStorage.clear();
       }
     } catch (error) {
       console.error("Error when sending message:", error);
