@@ -9,7 +9,7 @@
 .home-img {
     object-fit: cover;
     border-radius: 30px;
-    box-shadow: 0 0 8px hsla(0, 0%, 0%, .9);
+    /* box-shadow: 0 0 8px hsla(0, 0%, 46%, 0.9); */
     margin-left: 1rem;
     height: 100%;
 }

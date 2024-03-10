@@ -10,6 +10,10 @@ import { FaReact } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
+import { GoBrowser } from "react-icons/go";
+import { TbSettingsCode } from "react-icons/tb";
+import { MdOutlineStyle } from "react-icons/md";
+import { SiJest } from "react-icons/si";
 
 import { FaCode } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
@@ -108,45 +112,42 @@ export const personalInfos = [
 export const technicalSkills = [
   {
     id: 1,
-    icon: <FaHtml5 className="logo html-logo" />,
-    name: "HTML",
-    percentage: 70,
+    icon: <GoBrowser className="logo html-logo" />,
+    name: "Front-End",
+    desc: "HTML&CSS, JavaScript, React.js, Git/Github...",
+    percentage: 78,
   },
 
   {
     id: 2,
-    icon: <FaCss3Alt className="logo css-logo" />,
-    name: "CSS",
+    icon: <TbSettingsCode className="logo css-logo" />,
+    name: "Back-End",
+    desc: "Node.js, Express.js, PostgreSQL, Prisma...",
     percentage: 65,
   },
 
   {
     id: 3,
-    icon: <IoLogoJavascript className="logo js-logo" />,
-    name: "JavaScript",
-    percentage: 60,
-  },
-
-  {
-    id: 4,
-    icon: <FaReact className="logo react-logo" />,
-    name: "React",
+    icon: <MdOutlineStyle className="logo js-logo" />,
+    name: "UI/UX",
+    desc: "TailwindCSS, Chakra-ui...",
     percentage: 70,
   },
 
   {
-    id: 5,
-    icon: <FaGitAlt className="logo git-logo" />,
-    name: "Git/GitHub",
-    percentage: 60,
+    id: 4,
+    icon: <SiJest className="logo react-logo" />,
+    name: "Testing",
+    desc: "Jestjs ...",
+    percentage: 55,
   },
 ];
 
 export const otherSkills = [
   {
     id: 1,
-    name: "Data/APIs",
-    percentage: 75,
+    name: "Agile Development",
+    percentage: 65,
   },
 
   {
@@ -158,7 +159,7 @@ export const otherSkills = [
   {
     id: 3,
     name: "Communication",
-    percentage: 68,
+    percentage: 78,
   },
 
   {

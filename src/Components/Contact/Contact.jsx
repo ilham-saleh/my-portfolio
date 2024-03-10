@@ -5,6 +5,9 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FiSend } from "react-icons/fi";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./Contact.css";
 
 function getInitialText() {
@@ -36,12 +39,56 @@ function Contact() {
     console.log(postMessage);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setPostMessage({ ...postMessage });
-    localStorage.clear();
-    setPostMessage(getInitialText);
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(postMessage),
+    };
+
+    try {
+      const response = await fetch("http://localhost:3030/send-email", options);
+      const result = await response.json();
+      console.log(result);
+
+      if (response.ok) {
+        toast.success("Your message has been sent!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+
+        localStorage.clear();
+        setPostMessage(getInitialText);
+      } else {
+        console.log(result.error);
+        toast.error(`Error: ${result.error}`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+      }
+    } catch (error) {
+      console.error("Error when sending message:", error);
+      toast.error("Error sending message. Please try again.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    }
   };
 
   return (
@@ -81,7 +128,8 @@ function Contact() {
               <FaSquareGithub className="contact-icon" />
             </a>
             <div>
-              <h4>Visit my GitHub account</h4>
+              <h4>Visit my Github account</h4>
+              <p>Click GitHub icon</p>
             </div>
           </div>
         </div>

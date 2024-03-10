@@ -1,4 +1,4 @@
-import Me from "../../assets/Ilham/ilhamNew2.png";
+import Me from "../../assets/Ilham/3d-man.png";
 import { FaArrowDown } from "react-icons/fa";
 
 import AOS from "aos";
