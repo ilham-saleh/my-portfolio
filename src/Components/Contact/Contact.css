@@ -1,21 +1,21 @@
 .contact-title span {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .contact-title {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .contact-content-container {
-    grid-template-columns: 1fr 2fr;
-    justify-items: center;
-    padding: 50px 100px 0 100px;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  padding: 50px 100px 0 100px;
 }
 
 .talk {
-    font-family: var(--first-font);
-    font-size: 30px;
-    margin-bottom: 20px;
+  font-family: var(--first-font);
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 /* .contact-content {
@@ -23,63 +23,62 @@
     row-gap: 10px;
 } */
 
-.contact-content p{
-    font-size: 18px;
+.contact-content p {
+  font-size: 18px;
 }
 
 .content-text {
-    line-height: 2;
-    margin-bottom: 40px;
+  line-height: 2;
+  margin-bottom: 40px;
 }
 
 .contact-means {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .contact-icon {
-    font-size: 35px;
-    color: var(--primary-color);
+  font-size: 35px;
+  color: var(--primary-color);
 }
 
 .contact-form input {
-    padding: 10px 20px  ;
-    background-color: var(--container-color);
-    border-radius: 15px;
-
+  padding: 10px 20px;
+  background-color: var(--container-color);
+  border-radius: 15px;
 }
 
 .form-head {
-    display: grid;
-    grid-template-columns: repeat(auto, 1fr);
-    gap: 20px;
-    width: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+  gap: 20px;
+  width: 600px;
 }
 
 .contact-form textarea {
-    background-color: var(--container-color);
-    border-radius: 15px;
-    margin-top: 20px;
-    padding: 10px;
-    width: 600px;
-    margin-bottom: 20px;
+  background-color: var(--container-color);
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 600px;
+  margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-content-container {
+    padding: 100px 0 0 100px;
+  }
 
-@media screen and (max-width: 1200px){
-    .contact-content-container {
-        padding: 100px 0 0 100px;
-    }
-    
-    .contact-form textarea, input {
-        width: 500px;
-    }
+  .contact-form textarea,
+  input {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 760px) {
-    .contact-content-container {
-        grid-template-columns: 1fr;
-    }
+  .contact-content-container {
+    grid-template-columns: 1fr;
+  }
 }

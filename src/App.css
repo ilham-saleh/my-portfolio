@@ -1,132 +1,129 @@
 /* --------------- GOOGLE FONTS --------------- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&family=Roboto&display=swap");
 
 /* --------------- CSS VARIABLES --------------- */
 :root {
-    /* COLORS */
-    --primary-color: hsl(271, 76%, 53%);
-    --title-color: hsl(0, 0%, 40%);
-    --text-color: hsl(0, 0%, 50%);
-    --body-color: hsl(0, 0%, 100%);
-    --container-color: hsl(0, 0%, 93%);
-    --border-color: hsl(0, 0%, 87%);
-    --white-text: #fff;
+  /* COLORS */
+  --primary-color: hsl(271, 76%, 53%);
+  --title-color: hsl(0, 0%, 40%);
+  --text-color: hsl(0, 0%, 50%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 93%);
+  --border-color: hsl(0, 0%, 87%);
+  --white-text: #fff;
 
-    /* --------------- TYPOGRAPHY --------------- */
-    --body-font:  'Open Sans', sans-serif;
-    --second-font: 'Poppins', sans-serif;
+  /* --------------- TYPOGRAPHY --------------- */
+  --body-font: "Open Sans", sans-serif;
+  --second-font: "Poppins", sans-serif;
 }
 
 .dark-theme {
-    --title-color: hsl(0, 0%, 100%);
-    --text-color: hsl(0, 0%, 80%);
-    --body-color: hsl(0, 0%, 7%);
-    --container-color: hsl(0, 1%, 17%);
-    --border-color: hsl(0, 0%, 15%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 80%);
+  --body-color: hsl(0, 0%, 7%);
+  --container-color: hsl(0, 1%, 17%);
+  --border-color: hsl(0, 0%, 15%);
 }
-
 
 /* --------------- BASE---------------  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body,
-input, 
+input,
 textarea {
-    font-family: var(--body-font);
-    font-weight: 500;
+  font-family: var(--body-font);
+  font-weight: 500;
 }
 
 body {
-    background-color: var(--body-color);
-    color: var(--text-color);
-
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4 {
-    color: var(--title-color);
-    font-family: var(--second-font);
-    font-weight: 700;
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: 700;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-a, Link {
-    text-decoration: none;
+a,
+Link {
+  text-decoration: none;
 }
 
 a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 button,
 input,
 textarea {
-    border: none;
-    outline: none;
-    background-color: transparent;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 
 /* --------------------- RE-USABLE ------------------ */
 .button {
-    display: inline-block;
-    padding: 6px 70px 5px 30px;
-    border: 2px solid var(--primary-color);
-    border-radius: 35px;
-    font-size: 17px;
-    font-family: var(--second-font);
-    position: relative;
-    z-index: 1;
-    color: var(--title-color);
+  display: inline-block;
+  padding: 6px 70px 5px 30px;
+  border: 2px solid var(--primary-color);
+  border-radius: 35px;
+  font-size: 17px;
+  font-family: var(--second-font);
+  position: relative;
+  z-index: 1;
+  color: var(--title-color);
 }
 
 .button span {
-    position: absolute;
-    right: -16px;
-    top: -1px;
-    margin-right: 15px;
-    background-color: var(--primary-color);
-    color: var(--white-text);
-    padding: 10px 0;
-    border-radius: 50px;
-    width: 50px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  right: -16px;
+  top: -1px;
+  margin-right: 15px;
+  background-color: var(--primary-color);
+  color: var(--white-text);
+  padding: 10px 0;
+  border-radius: 50px;
+  width: 40px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .button:hover {
-    background-color: var(--primary-color);
-    transition: all .3s ease-in-out;
-    color: white;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  color: white;
 }
 
 .section {
-    padding-block: 70px;
+  padding-block: 70px;
 }
 
 .grid {
-    display: grid;
-    gap: 30px;
-    /* align-items: center;
+  display: grid;
+  gap: 30px;
+  /* align-items: center;
     justify-content: center; */
 }
 
 .section-title {
-    text-align: center;
-    color: var(--title-color);
+  text-align: center;
+  color: var(--title-color);
 }
