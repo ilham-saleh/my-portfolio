@@ -244,7 +244,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 5,
     img: CohortManager,
     title: "Cohort Manager",
     link: "https://github.com/ilham-saleh/react-cohort-dashboard-challenge",
@@ -264,7 +264,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     img: TicTacToe,
     title: "Next Gen Tic-Tac-Toe",
     link: "https://ilhams-tic-tac-toe.netlify.app/",
