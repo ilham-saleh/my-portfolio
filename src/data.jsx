@@ -242,25 +242,6 @@ export const projects = [
       },
     ],
   },
-  {
-    id: 5,
-    img: TicTacToe,
-    title: "Next Gen Tic-Tac-Toe",
-    link: "https://ilhams-tic-tac-toe.netlify.app/",
-    details: [
-      {
-        icon: <FaCode />,
-        title: "Language and Tools:",
-        desc: "JavaScript, React",
-      },
-
-      {
-        icon: <FaLink />,
-        title: "View App:",
-        desc: "Click to see deployed version",
-      },
-    ],
-  },
 
   {
     id: 6,
@@ -278,6 +259,26 @@ export const projects = [
         icon: <FaLink />,
         title: "View Repo:",
         desc: "Click to see GitHub repo",
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    img: TicTacToe,
+    title: "Next Gen Tic-Tac-Toe",
+    link: "https://ilhams-tic-tac-toe.netlify.app/",
+    details: [
+      {
+        icon: <FaCode />,
+        title: "Language and Tools:",
+        desc: "JavaScript, React",
+      },
+
+      {
+        icon: <FaLink />,
+        title: "View App:",
+        desc: "Click to see deployed version",
       },
     ],
   },

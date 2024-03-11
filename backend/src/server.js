@@ -52,7 +52,6 @@ app.use(express.json());
 //   }
 // });
 
-const sendEmail = require("../functions/sendEmail.js");
 app.post("/send-email", async (req, res) => {
   const { name, email, subject, message } = req.body;
 

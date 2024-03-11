@@ -2,17 +2,6 @@
 
 Welcome to my portfolio project! This project showcases my skills, projects, and achievements as a developer.
 
-Table of Contents
-
-<!-- Introduction
-Features
-Technologies Used
-Getting Started
-Project Structure
-Contributing
-License
-Contact -->
-
 ### Introduction
 
 - This portfolio project serves as a central hub for presenting my work, skills, and experiences as a developer. Whether you are a fellow developer, potential employer, or just curious about my projects, you'll find relevant information and links to explore further.
@@ -40,7 +29,7 @@ Contact -->
 
 ### Getting Started
 
-To run thisthe front-end of portfolio project locally, follow these steps:
+To run the front-end of portfolio project locally, follow these steps:
 
 Clone the Repository:
 

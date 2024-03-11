@@ -47,11 +47,14 @@ function Contact() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(postMessage),
+      body: JSON.stringify({ postMessage }),
     };
 
     try {
-      const response = await fetch("/.netlify/functions/send-email", options);
+      const response = await fetch(
+        "./netlify/functions/send-email.js",
+        options
+      );
       const result = await response.json();
       console.log(result);
 
@@ -66,7 +69,7 @@ function Contact() {
         });
 
         localStorage.clear();
-        setPostMessage(getInitialText);
+        setPostMessage(getInitialText());
       } else {
         console.log(result.error);
         toast.error(`Error: ${result.error}`, {
@@ -80,7 +83,7 @@ function Contact() {
         localStorage.clear();
       }
     } catch (error) {
-      console.error("Error when sending message:", error);
+      console.error("Error when sending message:", error.message);
       toast.error("Error sending message. Please try again.", {
         position: "top-right",
         autoClose: 5000,
