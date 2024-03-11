@@ -47,12 +47,12 @@ function Contact() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ postMessage }),
+      body: JSON.stringify(postMessage),
     };
 
     try {
       const response = await fetch(
-        "./netlify/functions/send-email.js",
+        "http://localhost:8888/.netlify/functions/send-email",
         options
       );
       const result = await response.json();

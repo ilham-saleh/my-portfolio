@@ -1,2 +1,4 @@
 [build]
   functions = "netlify"
+[dev]
+targetPort = 5173
