@@ -35,8 +35,6 @@ function Contact() {
       [name]: value,
     });
     localStorage.setItem(name, value);
-
-    console.log(postMessage);
   };
 
   const handleSubmit = async (e) => {
@@ -52,11 +50,10 @@ function Contact() {
 
     try {
       const response = await fetch(
-        "http://localhost:8888/.netlify/functions/send-email",
+        "https://sheet.best/api/sheets/1b75d741-6001-4c91-8e8f-8ecb11511f34",
         options
       );
       const result = await response.json();
-      console.log(result);
 
       if (response.ok) {
         toast.success("Your message has been sent!", {
@@ -68,7 +65,10 @@ function Contact() {
           draggable: true,
         });
 
-        localStorage.clear();
+        localStorage.removeItem("name");
+        localStorage.removeItem("email");
+        localStorage.removeItem("subject");
+        localStorage.removeItem("message");
         setPostMessage(getInitialText());
       } else {
         console.log(result.error);
@@ -115,7 +115,7 @@ function Contact() {
             <FaEnvelopeOpen className="contact-icon" />
             <div>
               <h4>Email me</h4>
-              <p>ilham2saleh@gmail.com</p>
+              <a href="mailto:ilham2saleh@gmail.com">ilham2saleh@gmail.com</a>
             </div>
           </div>
 
@@ -123,7 +123,7 @@ function Contact() {
             <FaPhoneSquareAlt className="contact-icon" />
             <div>
               <h4>Call me</h4>
-              <p>+447745756106</p>
+              <a href="tel:+447745756106">+447745756106</a>
             </div>
           </div>
 
@@ -133,7 +133,9 @@ function Contact() {
             </a>
             <div>
               <h4>Visit my Github account</h4>
-              <p>Click GitHub icon</p>
+              <a href="https://github.com/ilham-saleh">
+                Click GitHub icon or here{" "}
+              </a>
             </div>
           </div>
         </div>
