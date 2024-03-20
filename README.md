@@ -20,7 +20,7 @@ Welcome to my portfolio project! This project showcases my skills, projects, and
 
 - Javascript and React: Used for building the frontend of the portfolio website.
 - Vanilla CSS: used for styling the website
-- Node aand EXpress: used for building the backend of the portfolio website.
+- Node aand Express: used for building the backend of the portfolio website.
 - PostgreSQL: used to store the user data
 
 1. Styled Components: Employed for styling the components with a focus on component-level styling.
