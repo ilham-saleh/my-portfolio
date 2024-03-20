@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/Ilham/Developer-CV.pdf";
+import CV from "../../assets/Ilham/IlhamSalehResume.pdf";
 
 import { FaArrowDown } from "react-icons/fa6";
 import Ilham from "../../assets/Ilham/3d-man2.png";
