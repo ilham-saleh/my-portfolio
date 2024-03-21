@@ -22,7 +22,7 @@ function Home() {
       <div className="home-content-container" data-aos="fade-left">
         <div className="home-title">
           <h1>I'm Ilham Saleh</h1>
-          <h1>Software Developerr</h1>
+          <h1>Software Developer</h1>
         </div>
         <div className="home-content">
           <p>
