@@ -9,8 +9,22 @@ import { MdContactPhone } from "react-icons/md";
 // Skills Icons
 import { GoBrowser } from "react-icons/go";
 import { TbSettingsCode } from "react-icons/tb";
-import { MdOutlineStyle } from "react-icons/md";
-import { SiJest } from "react-icons/si";
+// import { MdOutlineStyle } from "react-icons/md";
+import { IoLibrarySharp } from "react-icons/io5";
+import { FaLaptopCode } from "react-icons/fa";
+
+import js from "../src/assets/skills-icons/js.svg"
+import react from "../src/assets/skills-icons/react.svg"
+import html from "../src/assets/skills-icons/html.svg"
+import css from "../src/assets/skills-icons/css.svg"
+import tailwind from "../src/assets/skills-icons/tailwind.svg"
+import node from "../src/assets/skills-icons/node.svg"
+import ts from "../src/assets/skills-icons/ts.svg"
+import python from "../src/assets/skills-icons/python.svg"
+import docker from "../src/assets/skills-icons/docker.svg"
+import prisma from "../src/assets/skills-icons/prisma.svg"
+import github from "../src/assets/skills-icons/github.svg"
+import sql from "../src/assets/skills-icons/sql.svg"
 
 // Project Icons
 import { FaCode } from "react-icons/fa";
@@ -112,7 +126,7 @@ export const technicalSkills = [
     id: 1,
     icon: <GoBrowser className="logo html-logo" />,
     name: "Front-End",
-    desc: "HTML&CSS, JavaScript, React.js, Git/Github...",
+    desc: "HTML&CSS, JavaScript, React.js...",
     percentage: 78,
   },
 
@@ -126,17 +140,17 @@ export const technicalSkills = [
 
   {
     id: 3,
-    icon: <MdOutlineStyle className="logo js-logo" />,
-    name: "UI/UX",
-    desc: "TailwindCSS, Chakra-ui...",
+    icon: <IoLibrarySharp className="logo js-logo" />,
+    name: "Libraries",
+    desc: "TailwindCSS, Chakra-ui, Axios...",
     percentage: 70,
   },
 
   {
     id: 4,
-    icon: <SiJest className="logo react-logo" />,
-    name: "Testing",
-    desc: "Jestjs ...",
+    icon: <FaLaptopCode className="logo react-logo" />,
+    name: "Others",
+    desc: "Jest, GitHub, Prisma ORM...",
     percentage: 55,
   },
 ];
@@ -150,20 +164,20 @@ export const otherSkills = [
 
   {
     id: 2,
-    name: "Creativity",
-    percentage: 85,
+    name: "TDD",
+    percentage: 70,
   },
 
   {
     id: 3,
     name: "Communication",
-    percentage: 78,
+    percentage: 80,
   },
 
   {
     id: 4,
     name: "Team Work",
-    percentage: 80,
+    percentage: 90,
   },
 ];
 
@@ -323,4 +337,70 @@ export const themes = [
     color: "red",
   },
 ];
-// export default links
+
+
+export const skillsIcons = [
+  {
+    id: 1,
+    icon: js,
+    name: "JavaScript"
+  }, 
+  {
+    id: 2,
+    icon: react,
+    name: "React"
+  }, 
+  {
+    id: 3,
+    icon: html,
+    name: "HTML"
+  }, 
+  {
+    id: 4,
+    icon: css,
+    name: "CSS"
+  }, 
+  {
+    id: 5,
+    icon: tailwind,
+    name: "TailwindCSS"
+  }, 
+  {
+    id: 6,
+    icon: node,
+    name: "Node"
+  }, 
+  {
+    id: 7,
+    icon: python,
+    name: "Python"
+  }, 
+  {
+    id: 8,
+    icon: sql,
+    name: "PostgreSQL"
+  }, 
+  {
+    id: 9,
+    icon: prisma,
+    name: "Prisma ORM"
+  }, 
+
+  {
+    id: 10,
+    icon: ts,
+    name: "TypeScript"
+  }, 
+  {
+    id: 11,
+    icon: docker,
+    name: "Docker"
+  }, 
+
+  {
+    id: 12,
+    icon: github,
+    name: "Git/GitHub"
+  }, 
+
+]

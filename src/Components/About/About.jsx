@@ -2,6 +2,7 @@ import React from "react";
 import { personalInfos } from "../../data";
 import { technicalSkills } from "../../data";
 import { otherSkills } from "../../data";
+import { skillsIcons } from "../../data";
 import AboutContent from "./AboutContent";
 import "./About.css";
 
@@ -27,12 +28,23 @@ function About() {
       </h1>
       <AboutContent personalInfos={personalInfos} />
       <div className="seperator"></div>
+
       <h1 className="skills-title section-title">
         My <span>Skills</span>
       </h1>
+      <div className="skills-upper-container" data-aos="fade-up">
+        <div className="skills-icons-container">
+          {skillsIcons.map(({ icon, name, id }) => (
+            <div className="skill" key={id}>
+              <img src={icon} alt={name} />
+              {/* <span>{name}</span> */}
+            </div>
+          ))}
+        </div>
+      </div>
 
       <div id="skills" className="skills-container grid">
-        <div className="technical-skills-container" data-aos="fade-down-right">
+        <div className="technical-skills-container" data-aos="fade-right">
           <h4 className="section-title technical-skills-title">
             Technical Skills
           </h4>
@@ -56,7 +68,7 @@ function About() {
           </ul>
         </div>
 
-        <div className="other-skills" data-aos="fade-down-left">
+        <div className="other-skills" data-aos="fade-left">
           <h4 className="section-title other-skills-title">Other Skills</h4>
           <ul className="other-skills-container">
             {otherSkills.map(({ id, name, percentage }) => (

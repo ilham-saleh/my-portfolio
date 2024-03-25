@@ -172,6 +172,50 @@
   display: none !important;
 }
 
+/* ---------------- SKILLS ICONS ----------------  */
+.skills-upper-container{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.skills-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 1200px;
+}
+
+.skill {
+  text-align: center;
+  margin: 10px;
+}
+
+.skill img {
+  width: 80px; /* Adjust the initial icon size */
+}
+
+.skill span {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .skill img {
+    width: 100px; /* Adjust the icon size for medium screens */
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .skill img {
+    width: 120px; /* Adjust the icon size for larger screens */
+  }
+}
+
+
+
 /* ----------------- MEDIA QUERY ---------------- */
 @media screen and (max-width: 1333px) {
   .about {
