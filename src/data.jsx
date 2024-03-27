@@ -151,7 +151,7 @@ export const technicalSkills = [
     icon: <FaLaptopCode className="logo react-logo" />,
     name: "Others",
     desc: "Jest, GitHub, Prisma ORM...",
-    percentage: 55,
+    percentage: 77,
   },
 ];
 
