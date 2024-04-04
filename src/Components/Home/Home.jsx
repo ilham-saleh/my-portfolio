@@ -26,13 +26,9 @@ function Home() {
         </div>
         <div className="home-content">
           <p>
-            As a recent graduate of a comprehensive software development
-            bootcamp at{" "}
-            <a href="https://boolean.co.uk" target="_blank">
-              Boolean UK,
-            </a>{" "}
-            I have immersed myself in industry specific-skills to become a
-            reliable developer!
+            Experienced full-stack developer with nearly 2 years of hands-on
+            experience in designing, developing, and deploying robust web
+            applications. Skilled in both frontend and backend development
           </p>
         </div>
 
