@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-import { FaEnvelopeOpen } from "react-icons/fa";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaEnvelopeOpen, FaPhoneSquareAlt } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FiSend } from "react-icons/fi";
 

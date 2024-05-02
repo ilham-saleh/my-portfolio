@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/Ilham/IlhamCV-Updated.pdf";
+import CV from "../../assets/Ilham/IlhamCV-full-stack.pdf";
 
 import { FaArrowDown } from "react-icons/fa6";
 import Ilham from "../../assets/Ilham/3d-man2.png";
@@ -26,8 +26,9 @@ function Home() {
         </div>
         <div className="home-content">
           <p>
-            Experienced full-stack developer with industry-specific skills in designing, developing, and deploying robust web
-            applications. Skilled in both frontend and backend development
+            Experienced full-stack developer with industry-specific skills in
+            designing, developing, and deploying robust web applications.
+            Skilled in both frontend and backend development
           </p>
         </div>
 

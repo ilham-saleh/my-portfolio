@@ -1,8 +1,11 @@
 import React from "react";
-import { personalInfos } from "../../data";
-import { technicalSkills } from "../../data";
-import { otherSkills } from "../../data";
-import { skillsIcons } from "../../data";
+import {
+  personalInfos,
+  technicalSkills,
+  otherSkills,
+  skillsIcons,
+} from "../../data";
+
 import AboutContent from "./AboutContent";
 import "./About.css";
 

@@ -1,9 +1,7 @@
 import React from "react";
 
 // Navbar Icons
-import { FaHome } from "react-icons/fa";
-import { FaUser } from "react-icons/fa";
-import { FaFolderOpen } from "react-icons/fa";
+import { FaUser, FaFolderOpen, FaHome } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
 
 // Skills Icons
@@ -13,30 +11,37 @@ import { TbSettingsCode } from "react-icons/tb";
 import { IoLibrarySharp } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
 
-import js from "../src/assets/skills-icons/js.svg"
-import react from "../src/assets/skills-icons/react.svg"
-import html from "../src/assets/skills-icons/html.svg"
-import css from "../src/assets/skills-icons/css.svg"
-import tailwind from "../src/assets/skills-icons/tailwind.svg"
-import node from "../src/assets/skills-icons/node.svg"
-import ts from "../src/assets/skills-icons/ts.svg"
-import python from "../src/assets/skills-icons/python.svg"
-import docker from "../src/assets/skills-icons/docker.svg"
-import prisma from "../src/assets/skills-icons/prisma.svg"
-import github from "../src/assets/skills-icons/github.svg"
-import sql from "../src/assets/skills-icons/sql.svg"
+import js from "../src/assets/skills-icons/js.svg";
+import react from "../src/assets/skills-icons/react.svg";
+import html from "../src/assets/skills-icons/html.svg";
+import css from "../src/assets/skills-icons/css.svg";
+import tailwind from "../src/assets/skills-icons/tailwind.svg";
+import node from "../src/assets/skills-icons/node.svg";
+import ts from "../src/assets/skills-icons/ts.svg";
+import python from "../src/assets/skills-icons/python.svg";
+import docker from "../src/assets/skills-icons/docker.svg";
+import prisma from "../src/assets/skills-icons/prisma.svg";
+import github from "../src/assets/skills-icons/github.svg";
+import sql from "../src/assets/skills-icons/sql.svg";
+import nextjs from "../src/assets/skills-icons/nextjs.svg";
+import cSharp from "../src/assets/skills-icons/cSharp.svg";
+import redux from "../src/assets/skills-icons/redux.svg";
+import visualStudio from "../src/assets/skills-icons/visualStudio.svg";
+import vsCode from "../src/assets/skills-icons/vscode.svg";
+import chakra from "../src/assets/skills-icons/chakra.svg";
 
 // Project Icons
 import { FaCode } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 
 // Project Images
-import Brewery from "././assets/Projects/brewery.webp";
+// import Brewery from "././assets/Projects/brewery.webp";
 import Greengrocery from "././assets/Projects/online-store.jpg";
 import CohortManager from "././assets/Projects/cohortManager2.png";
 import Pixabay from "././assets/Projects/pixabay.png";
 import ChattApp from "././assets/Projects/chatting-app.png";
 import TicTacToe from "././assets/Projects/tic-tac-toe.png";
+import gameHub from "./assets/Projects/gameHub.png";
 
 // Theme related images
 import Blue from "././assets/Colors/blue.png";
@@ -184,19 +189,20 @@ export const otherSkills = [
 export const projects = [
   {
     id: 1,
-    img: Pixabay,
-    title: "Pixebay Clone",
-    link: "https://fastidious-pony-8eb347.netlify.app/",
+    img: gameHub,
+    title: "PlayZone | Games Platform",
+    link: "https://polayzone.netlify.app/",
     details: [
       {
         icon: <FaCode />,
-        title: "Language",
-        desc: "JavaScript, React",
+        title: "Language:",
+        desc: "React.Js, TypeScript, Chakra-UI",
       },
+
       {
         icon: <FaLink />,
-        title: "View App:",
-        desc: "Click to see deployed version",
+        title: "View Live:",
+        desc: "Click to see live",
       },
     ],
   },
@@ -222,6 +228,25 @@ export const projects = [
 
   {
     id: 3,
+    img: Pixabay,
+    title: "Pixebay Clone",
+    link: "https://fastidious-pony-8eb347.netlify.app/",
+    details: [
+      {
+        icon: <FaCode />,
+        title: "Language",
+        desc: "JavaScript, React",
+      },
+      {
+        icon: <FaLink />,
+        title: "View App:",
+        desc: "Click to see live",
+      },
+    ],
+  },
+
+  {
+    id: 4,
     img: TicTacToe,
     title: "Next Gen Tic-Tac-Toe",
     link: "https://ilhams-tic-tac-toe.netlify.app/",
@@ -235,13 +260,13 @@ export const projects = [
       {
         icon: <FaLink />,
         title: "View App:",
-        desc: "Click to see deployed version",
+        desc: "Click to see live",
       },
     ],
   },
 
   {
-    id: 4,
+    id: 5,
     img: CohortManager,
     title: "Cohort Manager",
     link: "https://github.com/ilham-saleh/react-cohort-dashboard-challenge",
@@ -259,25 +284,25 @@ export const projects = [
       },
     ],
   },
-  {
-    id: 5,
-    img: Brewery,
-    title: "Brewery App",
-    link: "https://github.com/ilham-saleh/js-dom-brewery-tours-challenge",
-    details: [
-      {
-        icon: <FaCode />,
-        title: "Language:",
-        desc: "JavaScript",
-      },
+  // {
+  //   id: 5,
+  //   img: Brewery,
+  //   title: "Brewery App",
+  //   link: "https://github.com/ilham-saleh/js-dom-brewery-tours-challenge",
+  //   details: [
+  //     {
+  //       icon: <FaCode />,
+  //       title: "Language:",
+  //       desc: "JavaScript",
+  //     },
 
-      {
-        icon: <FaLink />,
-        title: "View Repo:",
-        desc: "Click to see GitHub repo",
-      },
-    ],
-  },
+  //     {
+  //       icon: <FaLink />,
+  //       title: "View Repo:",
+  //       desc: "Click to see GitHub repo",
+  //     },
+  //   ],
+  // },
 
   {
     id: 6,
@@ -338,69 +363,100 @@ export const themes = [
   },
 ];
 
-
 export const skillsIcons = [
   {
     id: 1,
     icon: js,
-    name: "JavaScript"
-  }, 
+    name: "JavaScript",
+  },
   {
     id: 2,
     icon: react,
-    name: "React"
-  }, 
+    name: "React",
+  },
   {
     id: 3,
     icon: html,
-    name: "HTML"
-  }, 
+    name: "HTML",
+  },
   {
     id: 4,
     icon: css,
-    name: "CSS"
-  }, 
+    name: "CSS",
+  },
   {
     id: 5,
     icon: tailwind,
-    name: "TailwindCSS"
-  }, 
+    name: "TailwindCSS",
+  },
   {
     id: 6,
     icon: node,
-    name: "Node"
-  }, 
+    name: "Node",
+  },
   {
     id: 7,
     icon: python,
-    name: "Python"
-  }, 
+    name: "Python",
+  },
   {
     id: 8,
     icon: sql,
-    name: "PostgreSQL"
-  }, 
+    name: "PostgreSQL",
+  },
   {
     id: 9,
     icon: prisma,
-    name: "Prisma ORM"
-  }, 
+    name: "Prisma ORM",
+  },
 
   {
     id: 10,
     icon: ts,
-    name: "TypeScript"
-  }, 
+    name: "TypeScript",
+  },
   {
     id: 11,
     icon: docker,
-    name: "Docker"
-  }, 
+    name: "Docker",
+  },
 
   {
     id: 12,
     icon: github,
-    name: "Git/GitHub"
-  }, 
+    name: "Git/GitHub",
+  },
 
-]
+  {
+    id: 13,
+    icon: cSharp,
+    name: "C#",
+  },
+  {
+    id: 14,
+    icon: nextjs,
+    name: "Next.js",
+  },
+
+  {
+    id: 15,
+    icon: redux,
+    name: "Redux",
+  },
+  {
+    id: 16,
+    icon: visualStudio,
+    name: "Visual Studio",
+  },
+  {
+    id: 17,
+    icon: vsCode,
+    name: "VsCode",
+  },
+
+  {
+    id: 18,
+    icon: chakra,
+    name: "Chakra-UI",
+  },
+];
