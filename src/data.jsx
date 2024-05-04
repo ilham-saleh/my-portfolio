@@ -23,12 +23,14 @@ import docker from "../src/assets/skills-icons/docker.svg";
 import prisma from "../src/assets/skills-icons/prisma.svg";
 import github from "../src/assets/skills-icons/github.svg";
 import sql from "../src/assets/skills-icons/sql.svg";
-import nextjs from "../src/assets/skills-icons/nextjs.svg";
+// import nextjs from "../src/assets/skills-icons/nextjs.svg";
 import cSharp from "../src/assets/skills-icons/cSharp.svg";
-import redux from "../src/assets/skills-icons/redux.svg";
+// import redux from "../src/assets/skills-icons/redux.svg";
 import visualStudio from "../src/assets/skills-icons/visualStudio.svg";
 import vsCode from "../src/assets/skills-icons/vscode.svg";
 import chakra from "../src/assets/skills-icons/chakra.svg";
+import reactQuery from "../src/assets/skills-icons/react-query-seeklogo.svg";
+import jQuery from "../src/assets/skills-icons/jQuery.svg";
 
 // Project Icons
 import { FaCode } from "react-icons/fa";
@@ -432,16 +434,16 @@ export const skillsIcons = [
     icon: cSharp,
     name: "C#",
   },
-  {
-    id: 14,
-    icon: nextjs,
-    name: "Next.js",
-  },
+  // {
+  //   id: 14,
+  //   icon: nextjs,
+  //   name: "Next.js",
+  // },
 
   {
     id: 15,
-    icon: redux,
-    name: "Redux",
+    icon: reactQuery,
+    name: "React Query",
   },
   {
     id: 16,
@@ -458,5 +460,10 @@ export const skillsIcons = [
     id: 18,
     icon: chakra,
     name: "Chakra-UI",
+  },
+  {
+    id: 19,
+    icon: jQuery,
+    name: "jQuery",
   },
 ];
