@@ -198,13 +198,13 @@ export const projects = [
       {
         icon: <FaCode />,
         title: "Language:",
-        desc: "React.Js, TypeScript, Chakra-UI",
+        desc: "TypeScript, React, React Query, Chakra-UI",
       },
 
       {
         icon: <FaLink />,
         title: "View Live:",
-        desc: "Click to see live",
+        desc: "Click here to see it live",
       },
     ],
   },
@@ -218,12 +218,12 @@ export const projects = [
       {
         icon: <FaCode />,
         title: "Language and Tools:",
-        desc: "Javascript, Node, Express, SQL, Prisma, Socket.io",
+        desc: "Javascript, React, Node, Express, SQL, Prisma, Socket.io",
       },
       {
         icon: <FaLink />,
         title: "View Repo:",
-        desc: "Click to see GitHub repo",
+        desc: "Click to here see GitHub repo",
       },
     ],
   },
@@ -241,8 +241,8 @@ export const projects = [
       },
       {
         icon: <FaLink />,
-        title: "View App:",
-        desc: "Click to see live",
+        title: "View Live:",
+        desc: "Click here to see it live",
       },
     ],
   },
@@ -261,8 +261,8 @@ export const projects = [
 
       {
         icon: <FaLink />,
-        title: "View App:",
-        desc: "Click to see live",
+        title: "View Live:",
+        desc: "Click here to see it live",
       },
     ],
   },
@@ -276,13 +276,13 @@ export const projects = [
       {
         icon: <FaCode />,
         title: "Language:",
-        desc: "React.Js/API",
+        desc: "JavaScript, React/APIs",
       },
 
       {
         icon: <FaLink />,
         title: "View Repo:",
-        desc: "Click to see GitHub repo",
+        desc: "Click here to see GitHub repo",
       },
     ],
   },
@@ -315,13 +315,13 @@ export const projects = [
       {
         icon: <FaCode />,
         title: "Language:",
-        desc: "React.Js",
+        desc: "JavaScript, React",
       },
 
       {
         icon: <FaLink />,
         title: "View Repo:",
-        desc: "Click to see GitHub repo",
+        desc: "Click here to see GitHub repo",
       },
     ],
   },
