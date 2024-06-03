@@ -38,7 +38,7 @@ import { FaLink } from "react-icons/fa";
 
 // Project Images
 // import Brewery from "././assets/Projects/brewery.webp";
-import Greengrocery from "././assets/Projects/online-store.jpg";
+import Dashboard from "././assets/Projects/dashboard.png";
 import CohortManager from "././assets/Projects/cohortManager2.png";
 import Pixabay from "././assets/Projects/pixabay.png";
 import ChattApp from "././assets/Projects/chatting-app.png";
@@ -249,6 +249,26 @@ export const projects = [
 
   {
     id: 4,
+    img: Dashboard,
+    title: "React Dashboard",
+    link: "https://github.com/ilham-saleh/react-dashboard",
+    details: [
+      {
+        icon: <FaCode />,
+        title: "Language:",
+        desc: "JavaScript, React, React Chart",
+      },
+
+      {
+        icon: <FaLink />,
+        title: "View Repo:",
+        desc: "Click here to see GitHub repo",
+      },
+    ],
+  },
+
+  {
+    id: 5,
     img: TicTacToe,
     title: "Next Gen Tic-Tac-Toe",
     link: "https://ilhams-tic-tac-toe.netlify.app/",
@@ -268,7 +288,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     img: CohortManager,
     title: "Cohort Manager",
     link: "https://github.com/ilham-saleh/react-cohort-dashboard-challenge",
@@ -277,45 +297,6 @@ export const projects = [
         icon: <FaCode />,
         title: "Language:",
         desc: "JavaScript, React/APIs",
-      },
-
-      {
-        icon: <FaLink />,
-        title: "View Repo:",
-        desc: "Click here to see GitHub repo",
-      },
-    ],
-  },
-  // {
-  //   id: 5,
-  //   img: Brewery,
-  //   title: "Brewery App",
-  //   link: "https://github.com/ilham-saleh/js-dom-brewery-tours-challenge",
-  //   details: [
-  //     {
-  //       icon: <FaCode />,
-  //       title: "Language:",
-  //       desc: "JavaScript",
-  //     },
-
-  //     {
-  //       icon: <FaLink />,
-  //       title: "View Repo:",
-  //       desc: "Click to see GitHub repo",
-  //     },
-  //   ],
-  // },
-
-  {
-    id: 6,
-    img: Greengrocery,
-    title: "Green Grocery Store",
-    link: "https://github.com/ilham-saleh/react-greengrocers",
-    details: [
-      {
-        icon: <FaCode />,
-        title: "Language:",
-        desc: "JavaScript, React",
       },
 
       {
